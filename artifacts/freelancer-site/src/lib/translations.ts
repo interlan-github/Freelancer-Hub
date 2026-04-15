@@ -23,6 +23,7 @@ export const translations = {
     },
     services: {
       title: "Специализация и услуги",
+      subtitle: "Инфраструктура, построенная для масштаба и стабильности.",
       osAdmin: {
         title: "Администрирование ОС",
         desc: "Windows Server (2012 R2 - 2022): AD, DNS, DHCP, файловые сервисы. Linux (CentOS, Ubuntu, Debian, Rocky Linux).",
@@ -124,6 +125,7 @@ export const translations = {
     },
     services: {
       title: "Specialization & Services",
+      subtitle: "Infrastructure engineered for scale and stability.",
       osAdmin: {
         title: "OS Administration",
         desc: "Windows Server (2012 R2 - 2022): AD, DNS, DHCP, file services. Linux (CentOS, Ubuntu, Debian, Rocky Linux).",

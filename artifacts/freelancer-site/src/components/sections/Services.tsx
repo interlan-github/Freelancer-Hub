@@ -58,7 +58,7 @@ export function Services() {
             {t("services.title")}
           </h2>
           <h3 className="text-3xl md:text-4xl font-bold text-foreground">
-            Infrastructure engineered for scale and stability.
+            {t("services.subtitle")}
           </h3>
         </div>
 
