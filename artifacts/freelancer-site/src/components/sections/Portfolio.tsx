@@ -22,7 +22,7 @@ export function Portfolio() {
             {t("portfolio.title")}
           </h2>
           <h3 className="text-3xl md:text-4xl font-bold text-foreground">
-            Proven infrastructure solutions.
+            {t("portfolio.subtitle")}
           </h3>
         </div>
 
@@ -54,7 +54,7 @@ export function Portfolio() {
                   </CardHeader>
                   <CardContent className="flex flex-col justify-between flex-1 gap-6">
                     <div>
-                      <p className="text-sm text-muted-foreground mb-2 uppercase tracking-wider font-semibold">Key Result</p>
+                      <p className="text-sm text-muted-foreground mb-2 uppercase tracking-wider font-semibold">{t("portfolio.keyResult")}</p>
                       <p className="text-lg font-medium text-primary">
                         {t(`portfolio.${c.id}.result`)}
                       </p>

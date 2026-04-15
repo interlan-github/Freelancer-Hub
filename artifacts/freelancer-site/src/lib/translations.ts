@@ -60,6 +60,8 @@ export const translations = {
     },
     portfolio: {
       title: "Выполненные проекты",
+      subtitle: "Проверенные инфраструктурные решения.",
+      keyResult: "Ключевой результат",
       case1: {
         title: "Миграция Windows Server инфраструктуры для ритейл сети",
         client: "Ритейл сеть",
@@ -162,6 +164,8 @@ export const translations = {
     },
     portfolio: {
       title: "Completed Projects",
+      subtitle: "Proven infrastructure solutions.",
+      keyResult: "Key Result",
       case1: {
         title: "Migration of Windows Server infrastructure for a retail chain",
         client: "Retail Chain",
