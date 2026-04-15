@@ -12,7 +12,7 @@ export const translations = {
     },
     hero: {
       name: "Антон Черноусов",
-      tagline: "Профессиональный Системный Администратор и DevOps Инженер",
+      tagline: "Системный Администратор и DevOps Инженер",
       badgeSysAdmin: "20+ лет OS Admin",
       badgeDevOps: "7 лет DevOps",
       cta: "Мои услуги",
@@ -113,7 +113,7 @@ export const translations = {
     },
     hero: {
       name: "Anton Chernousov",
-      tagline: "Professional System Administrator & DevOps Engineer",
+      tagline: "System Administrator & DevOps Engineer",
       badgeSysAdmin: "20+ yrs OS Admin",
       badgeDevOps: "7 yrs DevOps",
       cta: "View Services",
