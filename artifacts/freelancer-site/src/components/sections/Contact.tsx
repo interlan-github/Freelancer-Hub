@@ -55,7 +55,7 @@ export function Contact() {
               {t("contact.title")}
             </h2>
             <h3 className="text-3xl md:text-4xl font-bold text-foreground">
-              Let's discuss your infrastructure.
+              {t("contact.subtitle")}
             </h3>
           </div>
 
@@ -81,7 +81,7 @@ export function Contact() {
                     <Clock className="text-primary" size={20} />
                   </div>
                   <div>
-                    <p className="font-medium text-foreground">Working Hours</p>
+                    <p className="font-medium text-foreground">{t("contact.workingHoursLabel")}</p>
                     <p className="text-muted-foreground">
                       {t("contact.workingHours")}
                     </p>
@@ -93,14 +93,14 @@ export function Contact() {
                     <MapPin className="text-primary" size={20} />
                   </div>
                   <div>
-                    <p className="font-medium text-foreground">Location</p>
-                    <p className="text-muted-foreground">Remote / Global</p>
+                    <p className="font-medium text-foreground">{t("contact.locationLabel")}</p>
+                    <p className="text-muted-foreground">{t("contact.locationValue")}</p>
                   </div>
                 </div>
               </div>
 
               <div className="pt-8 border-t border-border">
-                <p className="font-medium text-foreground mb-4">Social & Messengers</p>
+                <p className="font-medium text-foreground mb-4">{t("contact.socialLabel")}</p>
                 <div className="flex items-center gap-4">
                   <a href="#" className="w-12 h-12 rounded-full bg-background border border-border flex items-center justify-center text-muted-foreground hover:text-[#0088cc] hover:border-[#0088cc] transition-colors">
                     <FaTelegram size={24} />
@@ -125,7 +125,7 @@ export function Contact() {
                   <div className="w-16 h-16 bg-green-500/20 text-green-500 rounded-full flex items-center justify-center mb-2">
                     <Send size={32} />
                   </div>
-                  <h4 className="text-2xl font-bold text-foreground">Message Sent</h4>
+                  <h4 className="text-2xl font-bold text-foreground">{t("contact.messageSent")}</h4>
                   <p className="text-muted-foreground max-w-sm">
                     {t("contact.success")}
                   </p>
@@ -134,7 +134,7 @@ export function Contact() {
                     onClick={() => setIsSuccess(false)}
                     className="mt-4"
                   >
-                    Send another message
+                    {t("contact.sendAnother")}
                   </Button>
                 </motion.div>
               ) : (
@@ -207,7 +207,7 @@ export function Contact() {
                           >
                             <Clock size={18} />
                           </motion.div>
-                          Sending...
+                          {t("contact.sending")}
                         </span>
                       ) : (
                         <span className="flex items-center gap-2">
