@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Anton Chernousov — SysAdmin & DevOps"
+version = "1.0.0"
+id = "artifacts/freelancer-site"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18728
+
+[services.development]
+run = "pnpm --filter @workspace/freelancer-site run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/freelancer-site", "run", "build" ]
+publicDir = "artifacts/freelancer-site/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18728"
+BASE_PATH = "/"

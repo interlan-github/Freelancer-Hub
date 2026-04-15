@@ -1,0 +1,171 @@
+ ### Technical Specification for a Freelancer’s Website
+
+**1. General Information**
+
+* **Project goal:** to create a website for a freelancer — a professional system administrator (Windows and Linux) and a DevOps engineer.
+* **Target audience:** companies and individuals looking for system administration and DevOps services.
+* **Main website tasks:**
+    * to present the specialist’s portfolio and experience;
+    * to describe the range of services offered;
+    * to provide contact information and a feedback form for potential clients;
+    * to ensure multilingual support (Russian — main language, English — additional);
+    * to integrate links to related resources (“About Me”, “Blog”).
+
+**2. Specialist Information**
+
+* **Name:** Anton Chernousov.
+* **Experience:**
+    * operating system administration — over 20 years;
+    * DevOps — 7 years.
+
+**3. Design Requirements**
+
+* **Colour scheme:** light tones (e.g., white, light grey, pastel accents).
+* **Style:** modern, minimalist, professional.
+* **Responsiveness:** full adaptation for mobile devices, tablets and desktops.
+* **Typography:** clear, easy‑to‑read fonts; sufficient line spacing and margins.
+* **Icons and illustrations:** use of high‑quality icons and, if necessary, schematic illustrations to visualise services and processes.
+
+**4. Website Structure**
+
+**Header:**
+* logo (with the specialist’s name or a stylised mark);
+* main menu:
+    * “Home”;
+    * “About Me” (link to a separate website);
+    * “Services”;
+    * “Portfolio / Cases”;
+    * “Blog” (link to a separate website);
+    * “Contacts”;
+* language switcher (RU ↔ EN), default — Russian;
+* button/link for quick contact (e.g., “Submit a request”).
+
+**Main Content:**
+
+1. **Home page:**
+    * welcome block with the specialist’s photo, a short slogan and a “Learn more” / “My services” button;
+    * brief “About Me” block: 2–3 sentences about the specialist, their experience and approach;
+    * “Services” block: a short list of main services with icons (Windows administration, Linux administration, DevOps, monitoring, backups, etc.), with the option to go to the full “Services” section;
+    * “Advantages” block: 3–5 points on why to choose this specialist (e.g., “20 years of experience”, “Guaranteed fault tolerance”, “Transparent reporting”);
+    * “Recent cases” block: 3–4 mini‑previews with pictures/icons and short headlines, “View full portfolio” link;
+    * call‑to‑action block: “Ready to discuss your project?” + “Contact me” button.
+
+2. **“About Me” section (external link):**
+    * detailed biography;
+    * education and certificates;
+    * key achievements and career milestones;
+    * photo gallery (professional photos).
+
+3. **“Services” section:**
+    * detailed description of each service, categorised as follows:
+        * **Operating system administration:**
+            * Windows Server (versions 2012 R2, 2016, 2019, 2022): installation, configuration, updates, user and group management, Active Directory, DNS, DHCP, file services;
+            * Linux (CentOS, Ubuntu, Debian, Rocky Linux): installation, configuration, updates, user management, network service configuration, file systems;
+        * **Application administration:**
+            * web servers (Apache, Nginx);
+            * databases (MySQL, PostgreSQL, MS SQL Server);
+            * email servers (Postfix, Exchange);
+            * corporate applications (1C, CRM, ERP);
+        * **Monitoring:**
+            * setting up monitoring systems (Zabbix, Prometheus + Grafana, Nagios);
+            * tracking availability, load, errors;
+            * setting up alerts (email, Telegram, Slack);
+        * **Backups and recovery:**
+            * developing a backup strategy;
+            * setting up automated backups (Veeam, Bacula, rsync, dump);
+            * testing recovery procedures;
+            * storing backups (locally, in the cloud);
+        * **DevOps:**
+            * CI/CD pipelines (GitLab CI, Jenkins, GitHub Actions);
+            * containerisation and orchestration (Docker, Kubernetes);
+            * infrastructure as code (IaC): Terraform, Ansible;
+            * setting up and maintaining cloud platforms (AWS, Azure, GCP, Yandex Cloud);
+            * automating deployment and configurations.
+    * for each service — a brief description, key tasks, expected outcome, possible tariffs/options.
+
+4. **“Portfolio / Cases” section:**
+    * list of completed projects with filters (by service type, OS, complexity);
+    * for each case:
+        * title and brief description of the client’s task;
+        * solution description (which technologies and approaches were used);
+        * results and achievements (quantitative indicators if possible: “reduced deployment time by 40 %”, “increased Uptime to 99.99 %”);
+        * screenshots, graphs, diagrams (if available and with client consent).
+
+5. **“Blog” section (external link):**
+    * articles on administration, DevOps, security, new technologies;
+    * categories and tags for navigation;
+    * blog search.
+
+6. **“Contacts” section:**
+    * full contact information:
+        * email;
+        * phone;
+        * messengers (Telegram, WhatsApp);
+        * links to profiles on professional social networks (LinkedIn, Habr, etc.);
+    * map with location marker (if relevant);
+    * working hours (e.g., “Mon–Fri, 9:00–18:00”);
+    * feedback form (see section 6).
+
+**Footer:**
+* brief information about the specialist (name, main specialty);
+* links to main website sections;
+* links to “About Me” and “Blog”;
+* social media and messenger icons;
+* copyright and year.
+
+**5. Functional Requirements**
+
+* **Multilingual support:**
+    * Russian — main language;
+    * English — full website version;
+    * language switcher in the header;
+    * language selection saved during navigation.
+* **Feedback form:**
+    * fields: name, email, subject, message;
+    * field validation (email format check, required fields);
+    * “Send” button;
+    * indication of successful submission or error;
+    * sending data to the specialist’s email and, optionally, to a CRM/notification service.
+* **SEO optimisation:**
+    * correct meta tags (title, description) for each page;
+    * semantic markup (headings H1–H6);
+    * human‑readable URLs (slugs);
+    * site map (sitemap.xml);
+    * robots.txt file.
+* **Performance:**
+    * fast page loading (optimised images, minified CSS/JS);
+    * caching use.
+* **Security:**
+    * HTTPS (SSL certificate);
+    * feedback form protection against spam (e.g., reCAPTCHA);
+    * regular CMS/framework updates.
+
+**6. Technical Requirements**
+
+* **Platform:** it is recommended to use a CMS (e.g., WordPress with a multilingual plugin) or a static site generator (e.g., Hugo, Jekyll) with i18n support.
+* **Hosting:** reliable hosting supporting PHP (if CMS) or static site deployment.
+* **Domain name:** unique, reflecting the specialist’s name or specialty.
+* **Analytics:** integration with Google Analytics and/or Yandex Metrica.
+
+**7. Timeline and Implementation Stages**
+
+1. **Stage 1 (1–2 weeks):** specification approval, prototype and design development.
+2. **Stage 2 (2–3 weeks):** layout and programming, content filling in Russian.
+3. **Stage 3 (1–2 weeks):** multilingual implementation, content filling in English.
+4. **Stage 4 (1 week):** testing (functional, usability, cross‑browser), bug fixing.
+5. **Stage 5 (1 week):** website launch, analytics and SEO setup.
+
+**8. Acceptance Criteria**
+
+* the website complies with the approved specification and design;
+* all sections and functions work correctly;
+* the website is adapted for all device types;
+* content in Russian and English is posted and correct;
+* the feedback form sends data;
+* the website is accessible via HTTPS;
+* key SEO parameters are configured.
+
+**9. Maintenance**
+
+* provision of content management instructions (if a CMS is used);
+* warranty support for 1 month after launch (fixing critical errors).

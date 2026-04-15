@@ -1,0 +1,204 @@
+export const translations = {
+  ru: {
+    nav: {
+      home: "Главная",
+      about: "Обо мне",
+      services: "Услуги",
+      portfolio: "Портфолио",
+      contacts: "Контакты",
+      aboutMeLink: "Обо мне",
+      blogLink: "Блог",
+      submitRequest: "Оставить заявку",
+    },
+    hero: {
+      name: "Антон Черноусов",
+      tagline: "Профессиональный Системный Администратор и DevOps Инженер",
+      badgeSysAdmin: "20+ лет OS Admin",
+      badgeDevOps: "7 лет DevOps",
+      cta: "Мои услуги",
+    },
+    about: {
+      title: "Обо мне",
+      content: "Более 20 лет опыта в администрировании серверных операционных систем и 7 лет в роли DevOps инженера. Мой подход к работе строится на трех принципах: абсолютная надежность инфраструктуры, прозрачность процессов и измеримый результат для бизнеса.",
+    },
+    services: {
+      title: "Специализация и услуги",
+      osAdmin: {
+        title: "Администрирование ОС",
+        desc: "Windows Server (2012 R2 - 2022): AD, DNS, DHCP, файловые сервисы. Linux (CentOS, Ubuntu, Debian, Rocky Linux).",
+      },
+      appAdmin: {
+        title: "Администрирование приложений",
+        desc: "Web (Apache, Nginx), БД (MySQL, PostgreSQL, MS SQL), Почта (Postfix, Exchange), Бизнес (1C, CRM, ERP).",
+      },
+      monitoring: {
+        title: "Мониторинг и алертинг",
+        desc: "Zabbix, Prometheus + Grafana, Nagios. Настройка оповещений (Email, Telegram, Slack).",
+      },
+      backup: {
+        title: "Резервное копирование",
+        desc: "Veeam, Bacula, rsync, dump. Локальные и облачные хранилища, планирование DRP.",
+      },
+      devops: {
+        title: "DevOps & Cloud",
+        desc: "CI/CD (GitLab CI, Jenkins, GitHub Actions), Docker/K8s, IaC (Terraform, Ansible), Cloud (AWS, Azure, GCP, Яндекс).",
+      }
+    },
+    advantages: {
+      title: "Преимущества работы со мной",
+      exp: "20+ лет опыта",
+      expDesc: "Глубокое понимание архитектуры и архитектурных паттернов.",
+      rel: "Фокус на 24/7",
+      relDesc: "Проектирование отказоустойчивых систем.",
+      doc: "Полная документация",
+      docDesc: "Оставляю после себя прозрачную и понятную базу знаний.",
+      price: "Прозрачные цены",
+      priceDesc: "Никаких скрытых платежей, четкие сметы.",
+      remote: "Удаленно / Офис",
+      remoteDesc: "Гибкий формат работы под нужды проекта.",
+    },
+    portfolio: {
+      title: "Выполненные проекты",
+      case1: {
+        title: "Миграция Windows Server инфраструктуры для ритейл сети",
+        client: "Ритейл сеть",
+        result: "Снижение простоев на 60%",
+        tools: ["Windows Server 2022", "AD", "Hyper-V"],
+      },
+      case2: {
+        title: "CI/CD пайплайн для SaaS стартапа",
+        client: "SaaS Стартап",
+        result: "Время деплоя сократилось с 2ч до 8мин",
+        tools: ["GitLab CI", "Docker", "Kubernetes"],
+      },
+      case3: {
+        title: "Enterprise система мониторинга",
+        client: "FinTech компания",
+        result: "Достигнут аптайм 99.97%",
+        tools: ["Zabbix", "Grafana", "Prometheus"],
+      },
+      case4: {
+        title: "Disaster recovery для финансовой компании",
+        client: "Банковский сектор",
+        result: "Проверенный RTO < 2 часов",
+        tools: ["Veeam", "Bacula", "AWS"],
+      }
+    },
+    contact: {
+      title: "Контакты",
+      name: "Ваше имя",
+      email: "Ваш Email",
+      subject: "Тема",
+      message: "Сообщение",
+      submit: "Отправить сообщение",
+      success: "Ваше сообщение успешно отправлено!",
+      info: "Контактная информация",
+      workingHours: "Пн–Пт 9:00–18:00 МСК",
+    },
+    footer: {
+      specialty: "Системный Администратор & DevOps Инженер",
+      copyright: "© 2024 Антон Черноусов. Все права защищены."
+    }
+  },
+  en: {
+    nav: {
+      home: "Home",
+      about: "About",
+      services: "Services",
+      portfolio: "Portfolio",
+      contacts: "Contacts",
+      aboutMeLink: "About Me",
+      blogLink: "Blog",
+      submitRequest: "Get in touch",
+    },
+    hero: {
+      name: "Anton Chernousov",
+      tagline: "Professional System Administrator & DevOps Engineer",
+      badgeSysAdmin: "20+ yrs OS Admin",
+      badgeDevOps: "7 yrs DevOps",
+      cta: "View Services",
+    },
+    about: {
+      title: "About Me",
+      content: "Over 20 years of experience in server operating systems administration and 7 years as a DevOps engineer. My approach to work is built on three principles: absolute infrastructure reliability, transparent processes, and measurable business results.",
+    },
+    services: {
+      title: "Specialization & Services",
+      osAdmin: {
+        title: "OS Administration",
+        desc: "Windows Server (2012 R2 - 2022): AD, DNS, DHCP, file services. Linux (CentOS, Ubuntu, Debian, Rocky Linux).",
+      },
+      appAdmin: {
+        title: "Application Administration",
+        desc: "Web (Apache, Nginx), DB (MySQL, PostgreSQL, MS SQL), Mail (Postfix, Exchange), Business (1C, CRM, ERP).",
+      },
+      monitoring: {
+        title: "Monitoring & Alerting",
+        desc: "Zabbix, Prometheus + Grafana, Nagios. Alert configuration (Email, Telegram, Slack).",
+      },
+      backup: {
+        title: "Backup & Recovery",
+        desc: "Veeam, Bacula, rsync, dump. Cloud and local storage, DRP planning.",
+      },
+      devops: {
+        title: "DevOps & Cloud",
+        desc: "CI/CD (GitLab CI, Jenkins, GitHub Actions), Docker/K8s, IaC (Terraform, Ansible), Cloud (AWS, Azure, GCP, Yandex Cloud).",
+      }
+    },
+    advantages: {
+      title: "Why work with me",
+      exp: "20+ Years Experience",
+      expDesc: "Deep understanding of architecture and patterns.",
+      rel: "24/7 Reliability Focus",
+      relDesc: "Designing fault-tolerant systems.",
+      doc: "Full Documentation",
+      docDesc: "I leave behind a transparent and clear knowledge base.",
+      price: "Transparent Pricing",
+      priceDesc: "No hidden fees, clear estimates.",
+      remote: "Remote or On-site",
+      remoteDesc: "Flexible working formats to suit project needs.",
+    },
+    portfolio: {
+      title: "Completed Projects",
+      case1: {
+        title: "Migration of Windows Server infrastructure for a retail chain",
+        client: "Retail Chain",
+        result: "Reduced downtime by 60%",
+        tools: ["Windows Server 2022", "AD", "Hyper-V"],
+      },
+      case2: {
+        title: "CI/CD pipeline for SaaS startup",
+        client: "SaaS Startup",
+        result: "Deployment time from 2h to 8min",
+        tools: ["GitLab CI", "Docker", "Kubernetes"],
+      },
+      case3: {
+        title: "Enterprise monitoring system",
+        client: "FinTech Company",
+        result: "99.97% uptime achieved",
+        tools: ["Zabbix", "Grafana", "Prometheus"],
+      },
+      case4: {
+        title: "Disaster recovery for financial company",
+        client: "Banking Sector",
+        result: "Tested RTO < 2 hours",
+        tools: ["Veeam", "Bacula", "AWS"],
+      }
+    },
+    contact: {
+      title: "Contact",
+      name: "Your Name",
+      email: "Your Email",
+      subject: "Subject",
+      message: "Message",
+      submit: "Send Message",
+      success: "Your message has been successfully sent!",
+      info: "Contact Information",
+      workingHours: "Mon–Fri 9:00–18:00 MSK",
+    },
+    footer: {
+      specialty: "System Administrator & DevOps Engineer",
+      copyright: "© 2024 Anton Chernousov. All rights reserved."
+    }
+  }
+};
