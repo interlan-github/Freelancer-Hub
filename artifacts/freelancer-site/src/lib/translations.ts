@@ -108,7 +108,9 @@ export const translations = {
     },
     footer: {
       specialty: "Системный Администратор & DevOps Инженер",
-      copyright: "© 2024 Антон Черноусов. Все права защищены."
+      copyright: "© 2024 Антон Черноусов. Все права защищены.",
+      navigation: "Навигация",
+      connect: "Связаться",
     }
   },
   en: {
@@ -220,7 +222,9 @@ export const translations = {
     },
     footer: {
       specialty: "System Administrator & DevOps Engineer",
-      copyright: "© 2024 Anton Chernousov. All rights reserved."
+      copyright: "© 2024 Anton Chernousov. All rights reserved.",
+      navigation: "Navigation",
+      connect: "Connect",
     }
   }
 };

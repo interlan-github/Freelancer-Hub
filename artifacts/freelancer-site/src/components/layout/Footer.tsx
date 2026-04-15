@@ -25,7 +25,7 @@ export function Footer() {
 
           <div className="flex flex-col gap-4">
             <h4 className="text-sm font-bold uppercase tracking-wider text-foreground">
-              Navigation
+              {t("footer.navigation")}
             </h4>
             <nav className="flex flex-col gap-2">
               <a href="#home" className="text-muted-foreground hover:text-primary transition-colors text-sm">
@@ -48,7 +48,7 @@ export function Footer() {
 
           <div className="flex flex-col gap-4">
             <h4 className="text-sm font-bold uppercase tracking-wider text-foreground">
-              Connect
+              {t("footer.connect")}
             </h4>
             <div className="flex items-center gap-4">
               <a href="#" className="text-muted-foreground hover:text-[#0088cc] transition-colors p-2 bg-secondary rounded-full">
