@@ -1,5 +1,5 @@
 import { Github, Linkedin, Mail, Send } from "lucide-react";
-import { FaTelegram, FaWhatsapp } from "react-icons/fa";
+import { FaTelegram, FaFacebook } from "react-icons/fa";
 import { useTranslation } from "@/lib/i18n";
 
 export function Footer() {
@@ -54,8 +54,8 @@ export function Footer() {
               <a href="#" className="text-muted-foreground hover:text-[#0088cc] transition-colors p-2 bg-secondary rounded-full">
                 <FaTelegram size={20} />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-[#25D366] transition-colors p-2 bg-secondary rounded-full">
-                <FaWhatsapp size={20} />
+              <a href="#" className="text-muted-foreground hover:text-[#1877F2] transition-colors p-2 bg-secondary rounded-full">
+                <FaFacebook size={20} />
               </a>
               <a href="#" className="text-muted-foreground hover:text-[#0a66c2] transition-colors p-2 bg-secondary rounded-full">
                 <Linkedin size={20} />

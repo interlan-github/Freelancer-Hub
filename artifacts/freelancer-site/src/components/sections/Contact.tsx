@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { Mail, Clock, MapPin, Send } from "lucide-react";
-import { FaTelegram, FaWhatsapp, FaLinkedin } from "react-icons/fa";
+import { Mail, Clock, MapPin, Send, Phone } from "lucide-react";
+import { FaTelegram, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { useTranslation } from "@/lib/i18n";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -78,6 +78,18 @@ export function Contact() {
 
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                    <Phone className="text-primary" size={20} />
+                  </div>
+                  <div>
+                    <p className="font-medium text-foreground">{t("contact.phoneLabel")}</p>
+                    <a href="tel:+79991234567" className="text-muted-foreground hover:text-primary transition-colors">
+                      +7 (999) 123-45-67
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                     <Clock className="text-primary" size={20} />
                   </div>
                   <div>
@@ -105,8 +117,8 @@ export function Contact() {
                   <a href="#" className="w-12 h-12 rounded-full bg-background border border-border flex items-center justify-center text-muted-foreground hover:text-[#0088cc] hover:border-[#0088cc] transition-colors">
                     <FaTelegram size={24} />
                   </a>
-                  <a href="#" className="w-12 h-12 rounded-full bg-background border border-border flex items-center justify-center text-muted-foreground hover:text-[#25D366] hover:border-[#25D366] transition-colors">
-                    <FaWhatsapp size={24} />
+                  <a href="#" className="w-12 h-12 rounded-full bg-background border border-border flex items-center justify-center text-muted-foreground hover:text-[#1877F2] hover:border-[#1877F2] transition-colors">
+                    <FaFacebook size={24} />
                   </a>
                   <a href="#" className="w-12 h-12 rounded-full bg-background border border-border flex items-center justify-center text-muted-foreground hover:text-[#0a66c2] hover:border-[#0a66c2] transition-colors">
                     <FaLinkedin size={24} />
