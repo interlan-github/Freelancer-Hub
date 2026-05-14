@@ -1,0 +1,51 @@
+# =============================================================================
+# Stage 1: Build the React + Vite frontend
+# =============================================================================
+FROM node:24-alpine AS builder
+
+# Install pnpm
+RUN npm install -g pnpm@10
+
+WORKDIR /workspace
+
+# Copy workspace-level config files first (for layer caching)
+COPY package.json pnpm-workspace.yaml pnpm-lock.yaml ./
+
+# Copy shared libraries that freelancer-site depends on
+COPY lib/api-spec/       lib/api-spec/
+COPY lib/api-zod/        lib/api-zod/
+COPY lib/api-client-react/ lib/api-client-react/
+
+# Copy the frontend package itself
+COPY artifacts/freelancer-site/ artifacts/freelancer-site/
+
+# Copy image assets referenced via @assets alias (attached_assets/)
+COPY attached_assets/ attached_assets/
+
+# Install all workspace dependencies
+RUN pnpm install --frozen-lockfile
+
+# Build the Vite app
+# PORT and BASE_PATH are required by vite.config.ts at build time
+ARG PORT=3000
+ARG BASE_PATH=/
+ENV PORT=$PORT \
+    BASE_PATH=$BASE_PATH \
+    NODE_ENV=production
+
+RUN pnpm --filter @workspace/freelancer-site run build
+
+# =============================================================================
+# Stage 2: Serve with Nginx
+# =============================================================================
+FROM nginx:1.27-alpine AS runtime
+
+# Copy built static files
+COPY --from=builder /workspace/artifacts/freelancer-site/dist/public /usr/share/nginx/html
+
+# Nginx config is mounted via docker-compose (see nginx.conf)
+COPY nginx.conf /etc/nginx/nginx.conf
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
