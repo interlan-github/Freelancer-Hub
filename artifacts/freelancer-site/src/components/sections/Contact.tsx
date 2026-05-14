@@ -82,8 +82,8 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="font-medium text-foreground">{t("contact.phoneLabel")}</p>
-                    <a href="tel:+79991234567" className="text-muted-foreground hover:text-primary transition-colors">
-                      +7 (999) 123-45-67
+                    <a href="tel:+79960721752" className="text-muted-foreground hover:text-primary transition-colors">
+                      +7 (996) 072-17-52
                     </a>
                   </div>
                 </div>
