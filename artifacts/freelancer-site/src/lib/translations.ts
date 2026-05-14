@@ -106,6 +106,7 @@ export const translations = {
       messageSent: "Сообщение отправлено",
       sendAnother: "Отправить ещё одно сообщение",
       sending: "Отправка...",
+      error: "Ошибка при отправке. Пожалуйста, попробуйте позже.",
     },
     footer: {
       specialty: "Системный Администратор & DevOps Инженер",
@@ -221,6 +222,7 @@ export const translations = {
       messageSent: "Message Sent",
       sendAnother: "Send another message",
       sending: "Sending...",
+      error: "Failed to send. Please try again later.",
     },
     footer: {
       specialty: "System Administrator & DevOps Engineer",

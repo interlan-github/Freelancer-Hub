@@ -33,17 +33,25 @@ export function Contact() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      const response = await fetch("/contact-api/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values),
+      });
+      if (!response.ok) {
+        throw new Error("Server error");
+      }
       setIsSuccess(true);
       form.reset();
-      
-      // Reset success message after 5 seconds
       setTimeout(() => setIsSuccess(false), 5000);
-    }, 1500);
+    } catch {
+      form.setError("root", { message: t("contact.error") });
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -210,6 +218,9 @@ export function Contact() {
                         </FormItem>
                       )}
                     />
+                    {form.formState.errors.root && (
+                      <p className="text-sm text-red-500">{form.formState.errors.root.message}</p>
+                    )}
                     <Button type="submit" className="w-full md:w-auto h-12 px-8" disabled={isSubmitting}>
                       {isSubmitting ? (
                         <span className="flex items-center gap-2">

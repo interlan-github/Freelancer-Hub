@@ -30,3 +30,11 @@ NODE_ENV = "production"
 
 [services.production.health.startup]
 path = "/api/healthz"
+
+[[services]]
+localPort = 8000
+name = "Contact Form API"
+paths = ["/contact-api"]
+
+[services.development]
+run = "uvicorn main:app --app-dir /home/runner/workspace/artifacts/contact-api --host 0.0.0.0 --port 8000 --reload"
