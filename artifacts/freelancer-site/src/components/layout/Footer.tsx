@@ -65,10 +65,10 @@ export function Footer() {
               </a>
             </div>
             <a
-              href="mailto:anton@chernousov.dev"
+              href="mailto:chernousov@interlan.xyz"
               className="text-muted-foreground hover:text-primary transition-colors text-sm flex items-center gap-2 mt-2"
             >
-              <Mail size={16} /> anton@chernousov.dev
+              <Mail size={16} /> chernousov@interlan.xyz
             </a>
           </div>
         </div>
